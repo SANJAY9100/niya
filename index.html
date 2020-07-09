@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="webinar.svg">
+    <title>Niya's learning Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <style>
+        table,th,td {
+          border : 1px solid black;
+          border-collapse: collapse;
+        }
+        th,td {
+          padding: 5px;
+        }
+        #box
+        { background-color: aqua;
+          margin:5px ;
+          height: 10vh;
+          width:max-content+10px;
+          float:left;
+          box-shadow: 3px 3px 5px grey;
+          border-radius: 10%;
+          
+        }
+        #box:hover{
+          box-shadow: 3px 3px 5px black inset;
+          
+        }
+        #letter,#word
+        {
+          margin: 10px;
+          float:left;
+          font-size: 3.5vmin;
+        }
+        #letter
+        {
+          margin-right: 0;
+        }
+        .btn
+        {
+          width:max-content;
+          height:max-content;
+          font-size: 2vmin;
+          margin:0;
+          border-radius:5px;
+          border:0;
+          padding: 10px ;
+
+          background-color:aquamarine;
+          
+        }
+        .btn:active{
+         box-shadow: 3px 3px 5px grey inset;
+         border-color: aquamarine;
+
+        }
+        p{
+          margin-top: 2vmin;
+          margin-bottom: 0;
+          margin-right: 0;
+          margin-left: 0;
+          /*margin:0;*/
+          width:0;
+          height:0;
+          box-sizing: content-box;
+          font-size: 2vmin;
+        }
+        #demo{
+          width: max-content;
+          max-width: 100%;
+          height: max-content;
+          margin: 5px;
+          
+        }
+        body{
+          margin: 0;
+          background-color:rgb(230, 209, 209);
+        }
+        #img{
+          width: 45vw;
+          height:40vh;
+          /*background-color:white;*/
+          position: center;
+          margin-bottom: 5px;
+        }
+        #header{
+        position: relative;
+        }
+        .cartoon
+        {
+          width:15vmax;
+          height:20vmax;
+          position: absolute;
+        }
+       
+        #right{
+          right:10%;
+        }
+        #right:hover{
+          right:15%;
+        }
+        #left:hover{
+          left:50px;
+        }
+        
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <center><h3 id="wish">Welcome!!</h3></center>
+      <div id="header">
+        <div class="cartoon" id="left"><a href="https://www.youtube.com/watch?v=Dk-nqyL_ayM&list=PLJYf0JdTApCorZOj35j3sw2X90-1IMKFn"><img src="cartoon.png" alt="tom" width="content-fit" height="100%"></a></div>
+        <div class="cartoon" id="right"><a href="https://www.youtube.com/watch?v=W18nAXue7hM&list=PLC6qIbU1olyXQe1WOKt8UJ4hErx3D7qt8"><img src="right.png" alt="mick" width="content-fit" height="100%"></a></div>
+        <center><div id="img"><img id="wp" src="https://t4.ftcdn.net/jpg/02/97/95/71/240_F_297957194_2RDRrjZky0aZ8qdFoZyJpXABhmLmEC96.jpg" alt="img" width="content-fit" height="100%"></div>
+        <input  type="button" class="btn" id="let" onclick="getLetters()" value="learn-letters">  
+        <input  type="button" class="btn" id="alp" onclick="getWords() " value="learn-A-Z"> 
+        <input  type="button" class="btn" id="num" onclick="getNum()" value="learn-1-100">  </center>       
+      </div>   
+      <div id="demo"></div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
